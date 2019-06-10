@@ -195,7 +195,7 @@ function scienceWordTweet() {
 	var baseString = scienceWordSentence();
 	var randomWord = scienceWordArray[Math.floor(Math.random()*scienceWordArray.length)];
 	unirest.get("https://wordsapiv1.p.mashape.com/words/" + randomWord + "/definitions")	
-		.header("X-Mashape-Key", "L5ZIAFFyaOmsh2rPUITNgNG3mMCRp16mrKajsnH1nWahoYaDEe")
+		.header("X-Mashape-Key", "INSERT_API_KEY")
 		.header("Accept", "application/json")
 		.end(function (result) {
 		var definitionsList = result.body.definitions;
